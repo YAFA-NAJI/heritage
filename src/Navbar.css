@@ -146,3 +146,45 @@ nav.scrolled {
   box-shadow: 0 4px 15px rgba(0,0,0,0.25);
   transition: background 0.4s ease;
 }
+
+/* تصميم مخصص للجوال */
+@media (max-width: 768px) {
+  nav .max-w-6xl {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+
+  nav .flex-row-reverse {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  nav .flex-row-reverse a {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  nav a.text-2xl {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  nav .hidden.md\:flex {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+
+  button[aria-label="Toggle Language"] {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+}

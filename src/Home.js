@@ -117,14 +117,7 @@ export default function Home() {
             </p>
           </section>
 
-      {/* تواصل معنا */}
-<section id="contact" className="py-20 px-4 text-center max-w-3xl mx-auto">
-  <h2 className="text-3xl font-semibold text-sky-700 dark:text-amber-400 mb-4">{t('home.contactTitle')}</h2>
-  <p className="text-gray-700 dark:text-gray-300 text-lg">
-    {t('home.contactDesc')}  
-    <span className="text-sky-700 dark:text-yellow-300 font-bold"> heritage@palestine.ps</span>
-  </p>
-</section>
+
 
      {/* الموقع الجغرافي */} 
           <section id="location" className="py-20 px-4 text-center max-w-6xl mx-auto">
@@ -182,32 +175,43 @@ export default function Home() {
 </section>
 
 
-          {/* مساعد التراث الفلسطيني */}
-          <section id="chatbot" className="py-20 px-4 text-center max-w-6xl mx-auto">
-            <h2 className="text-3xl font-semibold text-sky-700 dark:text-amber-400 mb-6">
-              مساعد التراث الفلسطيني
-            </h2>
-            <div className="rounded-xl overflow-hidden shadow-xl" style={{ maxWidth: "100%", margin: "0 auto" }}>
-              <iframe
-                src="https://yafa1234-palestinianheritagebot.hf.space/"
-                frameBorder="0"
-                width="100%"
-                height="600"
-                title="مساعد التراث الفلسطيني"
-                className="w-full"
-              ></iframe>
-            </div>
-          </section>
+        {/* مساعد التراث الفلسطيني */}
+<section id="chatbot" className="py-20 px-4 text-center max-w-6xl mx-auto">
+  <h2 className="text-3xl font-semibold text-sky-700 dark:text-amber-400 mb-6">
+    مساعد التراث الفلسطيني
+  </h2>
+  <div className="rounded-xl overflow-hidden shadow-xl" style={{ maxWidth: "100%", margin: "0 auto" }}>
+    <iframe
+      src="https://yafa1234-palestinianheritagebot.hf.space/"
+      frameBorder="0"
+      width="100%"
+      height="600"
+      title="مساعد التراث الفلسطيني"
+      className="w-full"
+    ></iframe>
+  </div>
+</section>
 
 
 
+      {/* تواصل معنا */}
+<section id="contact" className="py-20 px-4 text-center max-w-3xl mx-auto">
+  <h2 className="text-3xl font-semibold text-sky-700 dark:text-amber-400 mb-4">{t('home.contactTitle')}</h2>
+  <p className="text-gray-700 dark:text-gray-300 text-lg">
+    {t('home.contactDesc')}  
+    <span className="text-sky-700 dark:text-yellow-300 font-bold"> heritage@palestine.ps</span>
+  </p>
+</section>
 
           {/* الفوتر */}
           <footer className="mt-16 text-center text-gray-400 text-sm pb-6">
             © {new Date().getFullYear()} Virtual Heritage. {t('home.rightsReserved')}
           </footer>
+
+          
         </div>
       </section>
     </div>
+    
   );
 }

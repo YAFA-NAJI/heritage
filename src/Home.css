@@ -102,3 +102,39 @@ footer {
   color: #555;
   border-top: 1px solid #ddd;
 }
+/* تصميم متجاوب للأجهزة الصغيرة مثل الموبايل */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+
+  .container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  button, .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}

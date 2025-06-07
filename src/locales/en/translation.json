@@ -20,8 +20,17 @@
     "contactTitle": "Get in Touch",
     "contactDesc": "If you have any suggestions or feedback, please do not hesitate to contact us via email:",
     "rightsReserved": "All rights reserved.",
-
+    "mapTitle": "Location on the Map",
+    "mapDesc": "We are located in the heart of Palestine. You can visit the geographic location below:",
+    "folktaleTitle": "A Folk Tale",
+    "folktaleDesc": "Listen to one of the most beautiful Palestinian folk tales.",
+    "watchVideo": "Click here to watch the folk tale",
+    "hideVideo": "Hide Video",
     "proverbsTitle": "Palestinian Popular Proverbs",
+    "palestinianHeritageAssistantTitle": "Palestinian Heritage Assistant",
+"palestinianHeritageAssistantDesc": "Interact with our digital assistant to explore and learn more about Palestinian heritage.",
+"palestinianHeritageAssistantIframeTitle": "Palestinian Heritage Assistant",
+
     "proverbsDesc": "Popular proverbs reflect the wisdom of ancestors and their accumulated life experiences. Here are some of them:",
     "proverbsList": [
       "The neighbor before the house",
@@ -30,7 +39,6 @@
       "Out of sight, out of heart",
       "If you leave it, it gets ruined"
     ],
-
     "storiesTitle": "Stories from Popular Heritage",
     "storiesDesc": "Folk stories convey our values and morals, reflecting the struggles between good and evil in our environment. Read some stories lived in the Palestinian memory:",
     "storiesList": [
@@ -43,7 +51,6 @@
         "summary": "A brave Palestinian girl who protected her village from invaders with her cunning and intelligence, becoming a legend told through generations."
       }
     ],
-
     "songsTitle": "Traditional Songs and Chants",
     "songsDesc": "Traditional songs are sung at weddings and seasons, reflecting people's joy, sadness, and hope. Listen or read the lyrics of the most famous chants:",
     "songsList": [
@@ -56,7 +63,6 @@
         "lyrics": "O Moon of the house, the house calls us / Let's return to plant wheat and build it with our hands"
       }
     ],
-
     "foodsTitle": "Palestinian Popular Foods",
     "foodsDesc": "Discover the most famous dishes prepared by grandmothers, with unforgettable flavors:",
     "foodsList": [
@@ -74,14 +80,12 @@
       }
     ]
   },
-
   "navbar": {
     "home": "Home",
     "about": "About",
     "contact": "Contact",
     "title": "Palestinian Heritage"
   },
-
   "darkMode": {
     "light": "Light",
     "dark": "Dark",
