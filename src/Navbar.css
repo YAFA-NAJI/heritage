@@ -1,0 +1,148 @@
+/* Navbar.css */
+
+/* شريط التنقل الأساسي */
+nav {
+  background-color: #0284c7; /* سمائي متوسط */
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* الحاوية الرئيسية داخل الـ nav */
+nav .max-w-6xl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+/* روابط القائمة اليمنى (الروابط النصية) */
+nav .flex-row-reverse a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* تأثير التسطير عند المرور على الرابط */
+nav .flex-row-reverse a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #fbbf24; /* أصفر */
+  transition: width 0.3s ease;
+  border-radius: 1px;
+}
+
+nav .flex-row-reverse a:hover,
+nav .flex-row-reverse a:focus {
+  color: #fbbf24;
+}
+
+nav .flex-row-reverse a:hover::after,
+nav .flex-row-reverse a:focus::after {
+  width: 100%;
+}
+
+/* عنوان الموقع */
+nav a.text-2xl {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+}
+
+nav a.text-2xl:hover,
+nav a.text-2xl:focus {
+  color: #fbbf24;
+}
+
+/* روابط التواصل الاجتماعي وأزرار التحكم */
+nav .hidden.md\\:flex {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  nav .hidden.md\\:flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* أيقونات التواصل الاجتماعي */
+nav a[href*="facebook"],
+nav a[href*="twitter"],
+nav a[href*="instagram"] {
+  color: white;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+nav a[href*="facebook"]:hover,
+nav a[href*="facebook"]:focus {
+  color: #3b5998; /* أزرق فيسبوك */
+}
+
+nav a[href*="twitter"]:hover,
+nav a[href*="twitter"]:focus {
+  color: #1da1f2; /* أزرق تويتر */
+}
+
+nav a[href*="instagram"]:hover,
+nav a[href*="instagram"]:focus {
+  color: #e1306c; /* لون إنستغرام */
+}
+
+/* زر تبديل اللغة */
+button[aria-label="Toggle Language"] {
+  border: 2px solid #fbbf24;
+  background-color: transparent;
+  color: #fbbf24;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+button[aria-label="Toggle Language"]:hover,
+button[aria-label="Toggle Language"]:focus {
+  background-color: #fbbf24;
+  color: #0284c7;
+  outline: none;
+}
+
+/* زر الوضع الليلي - يمكنك تعديل حسب DarkModeToggle component */
+
+/* إضافة تأثير تراكب بسيط عند الضغط */
+button[aria-label="Toggle Language"]:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+
+/* إضافة تدرج بسيط عند التمرير على الشريط */
+nav.scrolled {
+  background: linear-gradient(90deg, #0369a1, #0284c7);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  transition: background 0.4s ease;
+}

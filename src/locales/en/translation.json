@@ -1,0 +1,91 @@
+{
+  "home": {
+    "title": "Palestinian Heritage Treasure",
+    "subtitle": "Reviving memories.. Protecting identity",
+    "aboutProjectTitle": "About the Project",
+    "aboutProjectDesc": "Our project is a national digital effort to document and preserve the rich Palestinian heritage from extinction. We work on collecting, classifying, and presenting our tangible and intangible heritage interactively.",
+    "itemsCount": "So far, we have documented {{count}} heritage items",
+    "imageAlt": "Palestinian Heritage",
+    "visionTitle": "Our Vision",
+    "visionDesc": "To be the most comprehensive digital platform for Palestinian heritage, contributing to identity preservation and bridging generations to pass this great legacy.",
+    "methodTitle": "Our Method",
+    "methodDesc": "We rely on reliable sources, interviews with elders, and academic references. Each material undergoes thorough review before publication.",
+    "contributeTitle": "Contribute to Preserve Heritage",
+    "contributeDesc": "Do you have heritage information or materials? We welcome your contribution to publish it.",
+    "contactUs": "Contact Us",
+    "heritageItemsTitle": "Palestinian Heritage Items",
+    "heritageItemsDesc": "Discover the most important cultural, artistic, and culinary aspects of our authentic Palestinian heritage.",
+    "whyHeritageTitle": "Why Heritage Matters?",
+    "whyHeritageDesc": "Heritage is the identity and cultural soul of peoples. By preserving it, we connect the past with the present, and give future generations a window to understand their roots. Heritage includes not only buildings and clothes but stories, songs, traditions, and daily practices that distinguish our community.",
+    "contactTitle": "Get in Touch",
+    "contactDesc": "If you have any suggestions or feedback, please do not hesitate to contact us via email:",
+    "rightsReserved": "All rights reserved.",
+
+    "proverbsTitle": "Palestinian Popular Proverbs",
+    "proverbsDesc": "Popular proverbs reflect the wisdom of ancestors and their accumulated life experiences. Here are some of them:",
+    "proverbsList": [
+      "The neighbor before the house",
+      "He who has no elder buys himself one",
+      "Those who feel shame have died",
+      "Out of sight, out of heart",
+      "If you leave it, it gets ruined"
+    ],
+
+    "storiesTitle": "Stories from Popular Heritage",
+    "storiesDesc": "Folk stories convey our values and morals, reflecting the struggles between good and evil in our environment. Read some stories lived in the Palestinian memory:",
+    "storiesList": [
+      {
+        "title": "The Story of Juha and the Donkey",
+        "summary": "It is said that Juha and his son decided to go to the market, so Juha rode the donkey and left his son walking, and people criticized them... Then they switched places, then both rode together, then both walked, and each time they heard criticism from people. The lesson: pleasing everyone is an unattainable goal."
+      },
+      {
+        "title": "Zagloulah, the Village Girl",
+        "summary": "A brave Palestinian girl who protected her village from invaders with her cunning and intelligence, becoming a legend told through generations."
+      }
+    ],
+
+    "songsTitle": "Traditional Songs and Chants",
+    "songsDesc": "Traditional songs are sung at weddings and seasons, reflecting people's joy, sadness, and hope. Listen or read the lyrics of the most famous chants:",
+    "songsList": [
+      {
+        "title": "Ya Zareef Al-Tool",
+        "lyrics": "O Tall and Handsome, stop for a moment / You’re going to a foreign land, but your homeland is better for you"
+      },
+      {
+        "title": "Aldar Ya Qamar",
+        "lyrics": "O Moon of the house, the house calls us / Let's return to plant wheat and build it with our hands"
+      }
+    ],
+
+    "foodsTitle": "Palestinian Popular Foods",
+    "foodsDesc": "Discover the most famous dishes prepared by grandmothers, with unforgettable flavors:",
+    "foodsList": [
+      {
+        "name": "Maqluba",
+        "desc": "A dish consisting of rice and fried vegetables (like cauliflower or eggplant) and meat, flipped in the serving dish to look like a 'cake' of rice."
+      },
+      {
+        "name": "Musakhan",
+        "desc": "Taboon bread topped with onion cooked in olive oil and chicken, considered a symbol of Palestinian cuisine."
+      },
+      {
+        "name": "Mafroum",
+        "desc": "Hand-rolled wheat balls cooked by steaming and served with vegetable or chicken broth."
+      }
+    ]
+  },
+
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "title": "Palestinian Heritage"
+  },
+
+  "darkMode": {
+    "light": "Light",
+    "dark": "Dark",
+    "lightMode": "Switch to Light Mode",
+    "darkMode": "Switch to Dark Mode"
+  }
+}
