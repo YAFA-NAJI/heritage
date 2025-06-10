@@ -1,8 +1,6 @@
-/* Navbar.css */
-
 /* شريط التنقل الأساسي */
 nav {
-  background-color: #0284c7; /* سمائي متوسط */
+  background-color: #0284c7;
   color: white;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -16,53 +14,16 @@ nav {
 
 /* الحاوية الرئيسية داخل الـ nav */
 nav .max-w-6xl {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 1rem;
-}
-
-/* روابط القائمة اليمنى (الروابط النصية) */
-nav .flex-row-reverse a {
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-/* تأثير التسطير عند المرور على الرابط */
-nav .flex-row-reverse a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background-color: #fbbf24; /* أصفر */
-  transition: width 0.3s ease;
-  border-radius: 1px;
-}
-
-nav .flex-row-reverse a:hover,
-nav .flex-row-reverse a:focus {
-  color: #fbbf24;
-}
-
-nav .flex-row-reverse a:hover::after,
-nav .flex-row-reverse a:focus::after {
-  width: 100%;
 }
 
 /* عنوان الموقع */
 nav a.text-2xl {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-  flex-shrink: 0;
 }
 
 nav a.text-2xl:hover,
@@ -70,21 +31,46 @@ nav a.text-2xl:focus {
   color: #fbbf24;
 }
 
-/* روابط التواصل الاجتماعي وأزرار التحكم */
-nav .hidden.md\\:flex {
-  display: none;
+/* روابط القائمة */
+nav .flex-col a,
+nav .flex-row-reverse a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
 }
 
-@media (min-width: 768px) {
-  nav .hidden.md\\:flex {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.25rem;
-  }
+/* تأثير التسطير عند المرور على الرابط */
+nav .flex-col a::after,
+nav .flex-row-reverse a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fbbf24;
+  transition: width 0.3s ease;
+  border-radius: 1px;
 }
 
-/* أيقونات التواصل الاجتماعي */
+nav .flex-col a:hover,
+nav .flex-col a:focus,
+nav .flex-row-reverse a:hover,
+nav .flex-row-reverse a:focus {
+  color: #fbbf24;
+}
+
+nav .flex-col a:hover::after,
+nav .flex-col a:focus::after,
+nav .flex-row-reverse a:hover::after,
+nav .flex-row-reverse a:focus::after {
+  width: 100%;
+}
+
+/* روابط التواصل الاجتماعي */
 nav a[href*="facebook"],
 nav a[href*="twitter"],
 nav a[href*="instagram"] {
@@ -96,17 +82,17 @@ nav a[href*="instagram"] {
 
 nav a[href*="facebook"]:hover,
 nav a[href*="facebook"]:focus {
-  color: #3b5998; /* أزرق فيسبوك */
+  color: #3b5998;
 }
 
 nav a[href*="twitter"]:hover,
 nav a[href*="twitter"]:focus {
-  color: #1da1f2; /* أزرق تويتر */
+  color: #1da1f2;
 }
 
 nav a[href*="instagram"]:hover,
 nav a[href*="instagram"]:focus {
-  color: #e1306c; /* لون إنستغرام */
+  color: #e1306c;
 }
 
 /* زر تبديل اللغة */
@@ -132,59 +118,94 @@ button[aria-label="Toggle Language"]:focus {
   outline: none;
 }
 
-/* زر الوضع الليلي - يمكنك تعديل حسب DarkModeToggle component */
-
-/* إضافة تأثير تراكب بسيط عند الضغط */
 button[aria-label="Toggle Language"]:active {
   transform: scale(0.95);
   transition: transform 0.1s ease;
 }
 
-/* إضافة تدرج بسيط عند التمرير على الشريط */
-nav.scrolled {
-  background: linear-gradient(90deg, #0369a1, #0284c7);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  transition: background 0.4s ease;
+/* زر الهامبرغر */
+button[aria-label="Toggle Menu"] {
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-/* تصميم مخصص للجوال */
-@media (max-width: 768px) {
+button[aria-label="Toggle Menu"]:hover,
+button[aria-label="Toggle Menu"]:focus {
+  color: #fbbf24;
+}
+
+/* تصميم الكمبيوتر */
+@media (min-width: 768px) {
   nav .max-w-6xl {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav .flex-row-reverse {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 0.5rem;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
   }
 
   nav .flex-row-reverse a {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
   }
 
-  nav a.text-2xl {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  nav .flex-row-reverse a::after {
+    bottom: -3px;
   }
 
-  nav .hidden.md\:flex {
-    display: flex !important;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 0.5rem;
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
+  /* إخفاء عناصر الجوال في الكمبيوتر */
+  .md\:hidden {
+    display: none;
   }
 
-  button[aria-label="Toggle Language"] {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    padding: 0.4rem 1rem;
+  /* إظهار عناصر الكمبيوتر */
+  .hidden.md\:flex {
+    display: flex;
+  }
+}
+
+/* تصميم الجوال */
+@media (max-width: 767px) {
+  /* إخفاء عناصر الكمبيوتر في الجوال */
+  .hidden.md\:flex {
+    display: none;
+  }
+
+  /* تحسين تباعد القائمة */
+  nav .flex-col {
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  /* تحسين حجم الخط */
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  /* تحسين حجم الأيقونات */
+  nav .text-xl {
+    font-size: 1.3rem;
+  }
+
+  /* تأثير الانزلاق للقائمة */
+  nav .block {
+    animation: slideIn 0.3s ease-in-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
